@@ -1,0 +1,13 @@
+
+<br>
+<br>
+<% if current_user %>
+ <%= link_to "sign-out",destroy_user_session_path, method: :delete %>
+ <% else %>
+
+<%= link_to "login", new_user_session_path %>
+<br>
+<%= link_to "sign-in", new_user_registration_path %>
+
+<% end %>
+
